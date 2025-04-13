@@ -9,6 +9,23 @@ The primary goal is to process electrophysiological recordings and associated im
 2.  Training a convolutional neural network (CNN) model to predict RGC firing rates based on the presented images.
 3.  Analyzing the results, evaluating model performance, and potentially characterizing cell properties like receptive fields.
 
+## Experiment procedure
+
+- Freshly dissociated mouse retina was recorded by a high-density MEA recording system
+
+- About 1200 images were projected on the retina for 0.5 second followed by 0.5 second of gray screen
+
+- Light response was recorded as a firing timestamp and preprocessed to get firing rates.
+
+## Important Data
+- final_X_dict.pkl and final_Y_dict.pkl can be used directly for training. About 200 cells were included, and they should be trained separately.
+
+- 2025_connected_image_to_firing_time.csv provides a link from the image to light responses (1-second responses)
+
+- compressed_ILSVRC2012 contains the images used for the experiments in a dimension of [time, x, y]. Each time frame is one image displayed. Note: Each batch does not have exactly 300 images due to the selection of images.
+
+
+
 ## Setup
 
 1.  **Clone the repository:**
