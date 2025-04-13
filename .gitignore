@@ -1,0 +1,14 @@
+
+*.png
+*.pt
+
+# ignore all .npy files in ILSVRC2012_003R
+ILSVRC2012_003R/*.npy
+
+# ignore all .npy files in compressed_ILSVRC2012
+compressed_ILSVRC2012/*.npy
+
+# ingore all .pkl files in raw_data
+raw_data/*.pkl
+
+
